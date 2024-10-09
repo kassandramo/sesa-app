@@ -41,7 +41,7 @@ router.get('/citas/:id', citasController.getCitaById);
 // Actualizar una cita por ID
 router.put('/citas/:id', citasController.updateCitaById);
 // Eliminar una cita por ID
-//router.delete('/citas/:id', citasController.deleteCitaById);
+router.delete('/citas/:id', citasController.deleteCitaById);
 
 //##### RUTAS Horario #####//
 // Crear un nuevo horario de atención

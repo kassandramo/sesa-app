@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('../module/db.module'); // Ruta al archivo donde configuras la conexión a la base de datos
+// Ruta al archivo donde configuras la conexión a la base de datos
+const sequelize = require('../module/db.module'); 
 
 const Paciente = sequelize.define('Paciente', {
   ID_PACIENTE: {

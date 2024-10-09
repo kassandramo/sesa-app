@@ -17,12 +17,12 @@ exports.getAllCitas = async (req, res) => {
             include: [
                 {
                     model: Paciente,
-                    as: 'paciente', // Usa el alias aquí
+                    as: 'paciente', 
                     attributes: ['NOMBRE', 'APELLIDO_PATERNO', 'APELLIDO_MATERNO']
                 },
                 {
                     model: Personal,
-                    as: 'personal', // Usa el alias aquí
+                    as: 'personal', 
                     attributes: ['NOMBRE', 'APELLIDO_PATERNO', 'APELLIDO_MATERNO']
                 }
             ]

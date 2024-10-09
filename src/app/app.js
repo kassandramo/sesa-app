@@ -5,7 +5,6 @@ const morgan = require("morgan");
 const app = express();
 const path = require("path");
 const cors = require('cors');
-//swagger
 const swaggerUi = require("swagger-ui-express");
 const swaggerJsdoc = require("swagger-jsdoc");
 
@@ -31,7 +30,6 @@ app.use(cors({
 
 app.use('/api', routes);
 app.use('/api-doc', swaggerUi.serve,swaggerUi.setup(swaggerJsdoc(swaggerSpec)));
-
 
 // Ruta a los archivos estáticos de Angular
 app.use(express.static(path.join(__dirname, '../../dist/sesa_page/browser')));
