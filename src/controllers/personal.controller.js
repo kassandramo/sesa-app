@@ -113,7 +113,8 @@ exports.getDatosInicioSesion = async (req, res) => {
     res.status(200).json({
       message: 'inicio de sesion correcto',
       CORREO: personal.CORREO,
-      ID_ROL: personal.ID_ROL
+      ID_ROL: personal.ID_ROL,
+      MATRICULA: personal.MATRICULA
     });
 
   } catch (error) {
